@@ -25,7 +25,7 @@ contract NFTERC721 is ERC721, Ownable {
           _baseURIextended = "https://api.optimate.world/get_nft?token_id=";
       }
   
-  function _baseURI() internal view virtual override returns (string memory){
+  function _baseURI() internal view virtual override returns (string memory) {
       return _baseURIextended;
   }
   
